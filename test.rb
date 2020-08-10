@@ -1,16 +1,6 @@
-if @board[WIN_COMBINATIONS[0][0]] == "X" && @board[WIN_COMBINATIONS[0][1]] == "X" && @board@board[WIN_COMBINATIONS[0][2]] == "X"
- elsif @board[WIN_COMBINATIONS[1][0]] == "X" && @board[WIN_COMBINATIONS[1][1]] == "X" && @board@board[WIN_COMBINATIONS[1][2]] == "X"
- elsif @board[WIN_COMBINATIONS[2][0]] == "X" && @board[WIN_COMBINATIONS[2][1]] == "X" && @board@board[WIN_COMBINATIONS[2][2]] == "X"
- elsif @board[WIN_COMBINATIONS[3][0]] == "X" && @board[WIN_COMBINATIONS[3][1]] == "X" && @board@board[WIN_COMBINATIONS[3][2]] == "X"
-  elsif @board[WIN_COMBINATIONS[4][0]] == "X" && @board[WIN_COMBINATIONS[4][1]] == "X" && @board@board[WIN_COMBINATIONS[4][2]] == "X"
-  elsif @board[WIN_COMBINATIONS[5][0]] == "X" && @board[WIN_COMBINATIONS[5][1]] == "X" && @board@board[WIN_COMBINATIONS[5][2]] == "X"
-  elsif @board[WIN_COMBINATIONS[6][0]] == "X" && @board[WIN_COMBINATIONS[6][1]] == "X" && @board@board[WIN_COMBINATIONS[6][2]] == "X"
- elsif @board[WIN_COMBINATIONS[7][0]] == "X" && @board[WIN_COMBINATIONS[7][1]] == "X" && @board@board[WIN_COMBINATIONS[7][2]] == "X"
- elsif @board[WIN_COMBINATIONS[0][0]] == "O" && @board[WIN_COMBINATIONS[0][1]] == "O" && @board@board[WIN_COMBINATIONS[0][2]] == "O"
- elsif @board[WIN_COMBINATIONS[1][0]] == "O" && @board[WIN_COMBINATIONS[1][1]] == "O" && @board@board[WIN_COMBINATIONS[1][2]] == "O"
- elsif @board[WIN_COMBINATIONS[2][0]] == "O" && @board[WIN_COMBINATIONS[2][1]] == "O" && @board@board[WIN_COMBINATIONS[2][2]] == "O"
- elsif @board[WIN_COMBINATIONS[3][0]] == "O" && @board[WIN_COMBINATIONS[3][1]] == "O" && @board@board[WIN_COMBINATIONS[3][2]] == "O"
-  elsif @board[WIN_COMBINATIONS[4][0]] == "O" && @board[WIN_COMBINATIONS[4][1]] == "O" && @board@board[WIN_COMBINATIONS[4][2]] == "O"
-  elsif @board[WIN_COMBINATIONS[5][0]] == "O" && @board[WIN_COMBINATIONS[5][1]] == "O" && @board@board[WIN_COMBINATIONS[5][2]] == "O"
-  elsif @board[WIN_COMBINATIONS[6][0]] == "O" && @board[WIN_COMBINATIONS[6][1]] == "O" && @board@board[WIN_COMBINATIONS[6][2]] == "O"
- elsif @board[WIN_COMBINATIONS[7][0]] == "O" && @board[WIN_COMBINATIONS[7][1]] == "O" && @board@board[WIN_COMBINATIONS[7][2]] == "O"
+1) ./lib/tic_tac_toe.rb TicTacToe#turn asks for input again after a failed validation
+     Failure/Error: expect(game).to receive(:gets).and_return("1")
+       (#<TicTacToe:0x00007fe657969ef8 @board=[" ", " ", " ", " ", " ", " ", " ", " ", "X"]>).gets(*(any args))
+           expected: 1 time with any arguments
+           received: 0 times with any arguments
+     # ./spec/01_tic_tac_toe_spec.rb:194:in `block (4 levels) in <top (required)>'

@@ -54,15 +54,18 @@ class TicTacToe
   end
   
   def turn
-    input = gets.strip
-    num = input_to_index(input)
-    if valid_move?(num)
-      move(num, current_player)
-      display_board
-    else
-      turn
+        puts "Please enter 1-9."
+        input = gets.strip
+        index = input_to_index(input)
+        token = current_player
+        if valid_move?(index)
+            move(index, token)
+            display_board
+        else
+            puts "invalid"
+            turn
+        end
     end
-  end
   
   def won?
     new_array = []
